@@ -43,7 +43,10 @@ Every blog post must strictly follow the structural requirement: **Philosophical
 4. **Write**: Redacción siguiendo el ADN de marca (Gancho -> Poético -> Clínico).
 5. **Build**: Guardado obligatorio en Google Drive (Carpeta: `1lrZl35Ld2T0tWa2tLfF4DD5XfZr74dMH`).
 6. **Atomización**: Derivación de 3 temas semanales para redes sociales (IG 3 Reels + 2 Carruseles / TikTok Repurpose).
-7. **Lead Magnet**: Creación del recurso educativo + Nota Clínica (Carpeta: `1gTj6_BhJNOh8T2e_z6TWKfxCJjIW7sj5`).
+7. **Protocolo Obligatorio de Lead Magnet**:
+    - **Paso A**: Redactar e investigar la **Nota Clínica** de respaldo teórica y guardarla en la carpeta científica (`1gTj6_BhJNOh8T2e_z6TWKfxCJjIW7sj5`).
+    - **Paso B**: Diseñar y redactar el **Lead Magnet** práctico y guardarlo en la carpeta de recursos (`1af2FqqzSGWy9_SVYRPw37wYOLC1BOUMA`).
+    - *Ambos pasos requieren validación clínica (OK de Cristina) antes de ser guardados en Drive.*
 
 ## Bundled Resources
 
