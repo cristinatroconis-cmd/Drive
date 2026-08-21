@@ -1,0 +1,66 @@
+name: Blog Post Writer Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Tema o alias para la entrada del blog'
+        required: true
+        type: string
+      lead_magnet_type:
+        description: 'Tipo de Lead Magnet (ej. checklist, workbook)'
+        required: false
+        default: 'checklist'
+        type: string
+
+jobs:
+  write_and_sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Instalar Dependencias
+        run: |
+          npm ci || npm install
+
+      - name: 1. Retrieve - Obtener Contexto de Tendencias
+        run: |
+          node blog-post-writer/scripts/get_blog_context.js "${{ github.event.inputs.topic }}"
+
+      - name: 2. Plan - Crear Outline Filosófico-Clínico
+        run: |
+          node blog-post-writer/scripts/create_blog_outline.js "${{ github.event.inputs.topic }}"
+
+      - name: 3. Write - Generar Borrador del Blog
+        run: |
+          node blog-post-writer/scripts/write_draft.js "blog-post-writer/outlines/${{ github.event.inputs.topic }}.md"
+
+      - name: 4. Build - Guardar en Google Drive
+        env:
+          GDRIVE_KEY: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_KEY }}
+          DRIVE_FOLDER_BLOG: "1lrZl35Ld2T0tWa2tLfF4DD5XfZr74dMH"
+        run: |
+          node blog-post-writer/scripts/save_to_drive.js "blog-post-writer/outlines/${{ github.event.inputs.topic }}_draft.md"
+
+      - name: 5. Lead Magnet - Crear Recurso Educativo
+        if: ${{ github.event.inputs.lead_magnet_type != '' }}
+        env:
+          GDRIVE_KEY: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_KEY }}
+          DRIVE_FOLDER_LEAD_MAGNET: "1gTj6_BhJNOh8T2e_z6TWKfxCJjIW7sj5"
+        run: |
+          node blog-post-writer/scripts/create_lead_magnet.js "${{ github.event.inputs.topic }}" "${{ github.event.inputs.lead_magnet_type }}"
+
+      - name: Guardar Cambios en GitHub
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog-post-writer/outlines/
+          git commit -m "auto: borrador generado para ${{ github.event.inputs.topic }}" || echo "Sin cambios locales"
+          git push
