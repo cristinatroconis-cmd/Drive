@@ -15,13 +15,45 @@ Esta es la **Fuente de Verdad (SSoT)** operativa. Rige la planificación, creaci
 1.  **Núcleo (Fuente)**: Blog Post / Newsletter (1000+ palabras). Profundidad máxima.
 2.  **Derivación (Redes)**: De cada Blog Post se extraen los activos para las redes sociales.
 
-## 3. Planificación Semanal (Instagram + TikTok)
-*   **Temas**: 3 temas por semana (derivados directamente de los artículos creados por `blog-post-writer`).
-*   **Instagram (Refugio Sensorial)**:
-    *   **3 Reels (Videos)**: 1 video por tema. Cada video utiliza uno de los 3 ganchos distintos planificados para la semana (estilos alternados: Clínico/Poético vs Dinámico).
-    *   **2 Carruseles (Educativos)**: "Arquitectura de la calma". Desglose visual de conceptos.
-*   **TikTok (Conexión Cruda)**:
-    *   **Estrategia de Reutilización**: Se toma el contenido de IG y se publica de forma "cruda", natural, sin edición pesada. Foco en la vulnerabilidad y el "pensamiento en el momento".
+
+## 3. Planificación Mensual (Instagram + TikTok — Calendario de 4 Semanas)
+
+*   **Matriz de Contenido (4 Temas × 4 Ganchos)**: 
+    *   Se seleccionan **4 temas principales al mes** (derivados de `blog-post-writer`).
+    *   **1 Tema = 4 Videos**: Para cada tema se producen exactamente 4 videos, variando únicamente la fórmula del gancho (*hook*):
+        1. *Gancho Clínico / Diferenciador*
+        2. *Gancho de Afirmación Audaz / Myth Busting*
+        3. *Gancho Empático / Experiencia Relacionable*
+        4. *Gancho de Pregunta o Beneficio Directo*
+
+*   **Estructura de Publicación Semanal**:
+    *   **4 Videos por Semana** (16 videos en total al mes).
+    *   En cada semana se publican videos de los **4 temas en paralelo**, rotando tanto la temática como el tipo de gancho para mantener la variedad y testear rendimiento en simultáneo.
+
+---
+
+### **A. Instagram (Refugio Sensorial)**
+
+*   **4 Reels (Videos) por Semana**: 
+    Videos con edición estética, ritmo cuidado y tono de "Refugio Sensorial", alternando los 3 temas del mes y sus 4 variaciones de ganchos.
+*   **2 Carruseles Educativos por Mes**: *"Arquitectura de la calma"*. Desglose visual y conceptual profundo de los temas del mes, intercalados estratégicamente.
+
+---
+
+### **B. TikTok (Conexión Cruda)**
+
+*   **Estrategia de Reutilización**: Se toman los 4 Reels semanales de Instagram y se adaptan/publican en formato "crudo" (*raw*), sin edición cargada.
+*   **Enfoque**: Priorizar la vulnerabilidad, la naturalidad y el formato de "pensamiento en el momento" para conectar desde la autenticidad.
+
+---
+
+### **Resumen del Ciclo Mensual**
+
+| Componente | Cantidad Mensual | Detalle |
+| :--- | :--- | :--- |
+| **Temas Activos** | 3 temas / mes | Cada tema genera 4 versiones de video (1 por gancho) |
+| **Videos (Reels / TikTok)** | 16 videos / mes | 4 videos por semana (rotando los 3 temas y los 4 ganchos) |
+| **Carruseles IG** | 2 carruseles / mes | Formato educativo *"Arquitectura de la calma"* |
 
 ## 4. Estrategia SEO (Post Descriptions)
 *   **Pivote**: Los hashtags pasan a ser secundarios. **El foco es el SEO en la descripción**.
